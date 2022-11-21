@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Raleway:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+body {
+  background-color: pink;
+}
+
+section {
+  height: calc(100vh - 50px);
+}
+
+nav {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  background-color: #1f1e1e;
+  font-family: "Bayon", sans-serif;
+  width: 100%;
+}
+nav span {
+  display: flex;
+  gap: 50px;
+}
+nav span a {
+  color: #FFF;
+  transition: color 0.7s;
+}
+nav span a:hover {
+  color: #15ACDC;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  nav span {
+    gap: 20px;
+  }
+}
+
+.sintoniza {
+  margin-top: 50px;
+  background-image: url("imagens/fundo.jpg");
+  background-size: cover;
+}
+
+.sintoniza-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  height: inherit;
+}
+.sintoniza-content h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 70px;
+  font-family: "Bayon", sans-serif;
+  text-shadow: 4px 4px #1f1e1e;
+}
+
+.albuns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 40%;
+}
+.albuns .spotify {
+  width: 300px;
+  height: 300px;
+}
+.albuns .discografia {
+  color: #FFF;
+  font-family: "Barlow Condensed", sans-serif;
+  height: 90%;
+  border-left: solid 1px #FFF;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  text-shadow: 2px 2px #1f1e1e;
+}
+.albuns .discografia ul {
+  padding: 0;
+}
+.albuns .discografia ul li::before {
+  content: "+ ";
+}
+.albuns .discografia ul li {
+  font-size: 1.4rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.albuns .discografia ul p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .albuns {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .albuns .discografia {
+    border: none;
+    padding-left: 0;
+  }
+}
+
+.sobre {
+  background-color: #1f1e1e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sobre div {
+  display: flex;
+  justify-content: center;
+}
+.sobre .logo {
+  width: 50.5%;
+  border-right: solid 2px #FFF;
+}
+.sobre .logo img {
+  height: 250px;
+}
+.sobre .texto-sobre {
+  width: 49.5%;
+}/*# sourceMappingURL=style.css.map */
