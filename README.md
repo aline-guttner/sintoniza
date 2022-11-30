@@ -15,4 +15,4 @@ Quer contribuir? Siga essas [recomendações](https://github.com/aline-guttner/s
 Acompanhe as alterações através da aba [Releases](https://github.com/aline-guttner/sintoniza/releases).
 
 ## Licença
-[MIT License](https://github.com/afonsopacifer/open-source-boilerplate/blob/master/LICENSE.md) © Aline Cegatto
+aaaaaaaaaaa © Aline Cegatto
