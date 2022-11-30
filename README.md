@@ -15,4 +15,4 @@ Quer contribuir? Siga essas [recomendações](https://github.com/aline-guttner/s
 Acompanhe as alterações através da aba [Releases](https://github.com/aline-guttner/sintoniza/releases).
 
 ## Licença
-aaaaaaaaaaa © Aline Cegatto
+[MIT License](https://github.com/aline-guttner/sintoniza/blob/main/LICENSE) © Aline Cegatto
