@@ -204,7 +204,9 @@ nav span a:hover {
 }
 .shows .item-carrosel img {
   height: 300px;
-  max-width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 40%;
   border: solid 1px #FFC0CB;
   box-shadow: 4px 4px #FFC0CB;
 }
@@ -224,5 +226,12 @@ nav span a:hover {
   }
   .shows .car2 {
     display: block;
+  }
+  .shows .car2 .item-carrosel {
+    display: flex;
+    flex-direction: column;
+  }
+  .shows .car2 img {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
