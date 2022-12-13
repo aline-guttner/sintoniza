@@ -33,35 +33,29 @@ a{
 
 
 
-nav{
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    position: fixed;
-    z-index: 1;
-    background-color: $cor1;
-    font-family: $fonte1;
-    width: 100%;
-
-    span{
+.myNavbar{
+    background-color: $cor1!important;
+    font-family: $fonte2;
+    font-size: larger;
+    #navbarNav{
         display: flex;
-        gap: 50px;
-        a{
-            color: $cor2;
-            transition: color 0.7s;
-        }
-
-        a:hover{
+        justify-content: space-around;
+    }
+    a{
+        color: $cor2;
+        transition: color 0.7s;
+        &:hover{
             color: $cor3;
             text-decoration: none;
         }
-
-        @media (max-width: $mobile) {
-           gap: 20px;
+    }
+    @media (max-width: $mobile) {
+        #navbarNav{
+            justify-content: flex-start;
         }
     }
+
+
 }
 
 #sintoniza{

@@ -18,33 +18,26 @@ a:hover {
   color: #FFC0CB;
 }
 
-nav {
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  position: fixed;
-  z-index: 1;
-  background-color: #161616;
-  font-family: "Bayon", sans-serif;
-  width: 100%;
+.myNavbar {
+  background-color: #161616 !important;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: larger;
 }
-nav span {
+.myNavbar #navbarNav {
   display: flex;
-  gap: 50px;
+  justify-content: space-around;
 }
-nav span a {
+.myNavbar a {
   color: #FFF;
   transition: color 0.7s;
 }
-nav span a:hover {
+.myNavbar a:hover {
   color: #15ACDC;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  nav span {
-    gap: 20px;
+  .myNavbar #navbarNav {
+    justify-content: flex-start;
   }
 }
 
