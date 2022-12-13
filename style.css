@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&display=swap");
 body {
-  background-color: pink;
+  background-color: #FFC0CB;
 }
 
 section {
@@ -22,10 +22,13 @@ a:hover {
   background-color: #161616 !important;
   font-family: "Barlow Condensed", sans-serif;
   font-size: larger;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
-.myNavbar #navbarNav {
-  display: flex;
-  justify-content: space-around;
+.myNavbar .navbar-nav {
+  justify-content: center;
+  width: 100%;
 }
 .myNavbar a {
   color: #FFF;
@@ -34,11 +37,6 @@ a:hover {
 .myNavbar a:hover {
   color: #15ACDC;
   text-decoration: none;
-}
-@media (max-width: 768px) {
-  .myNavbar #navbarNav {
-    justify-content: flex-start;
-  }
 }
 
 #sintoniza {

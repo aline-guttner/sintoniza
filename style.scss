@@ -14,7 +14,7 @@ $desktop_sm: 1080px;
 $desktop_md: 1280px;
 
 body{
-    background-color: pink;
+    background-color: $cor4;
 }
 
 section{
@@ -37,10 +37,14 @@ a{
     background-color: $cor1!important;
     font-family: $fonte2;
     font-size: larger;
-    #navbarNav{
-        display: flex;
-        justify-content: space-around;
-    }
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+   .navbar-nav{
+       justify-content: center;
+       width: 100%;
+   }
+    
     a{
         color: $cor2;
         transition: color 0.7s;
@@ -49,13 +53,6 @@ a{
             text-decoration: none;
         }
     }
-    @media (max-width: $mobile) {
-        #navbarNav{
-            justify-content: flex-start;
-        }
-    }
-
-
 }
 
 #sintoniza{
