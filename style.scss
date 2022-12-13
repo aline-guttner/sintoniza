@@ -212,6 +212,7 @@ a{
     
         .item-carrosel{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -219,21 +220,27 @@ a{
             img{
                 height: 300px;
                 object-fit: cover;
-                max-width: 40%;
+                width: 40%;
                 border: solid 1px $cor4;
                 box-shadow: 4px 4px $cor4;
                 
             }
+            p{
+                font-family: $fonte2;
+                text-align: center;
+                color: $cor2;
+                padding: 20px 0 0 0;
+            }
+            .img-container{
+                display: flex;
+                justify-content: space-around;
+            }
         }
-    
-        p{
-            font-family: $fonte2;
-            text-align: center;
-            color: $cor2;
-            padding: 20px 0 0 0;
-        }
-    
+
         @media (max-width: $mobile) {
+           .item-carrosel img{
+                width: 70%;
+            }
            .car1{
             display: none;
            }
@@ -282,8 +289,8 @@ a{
                 border: solid 1px $cor1;
                 box-shadow: 4px 4px $cor1;
                 object-fit: cover;
-                width: 200px;
-                height: 230px;
+                width: 30%;
+                height: 250px;
             }
         }
     }
@@ -324,13 +331,13 @@ a{
                 margin-bottom: 30px;
             }
            .imagens img{
+                width: 70%;
+                height: auto;
                 margin-bottom: 30px;
             }
         }
 
 }}
-
-
 
 #contato-container{
     min-height: 300px;

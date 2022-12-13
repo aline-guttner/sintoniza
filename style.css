@@ -195,6 +195,7 @@ a:hover {
 }
 #shows-container .shows .item-carrosel {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -204,17 +205,24 @@ a:hover {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 40%;
+  width: 40%;
   border: solid 1px #FFC0CB;
   box-shadow: 4px 4px #FFC0CB;
 }
-#shows-container .shows p {
+#shows-container .shows .item-carrosel p {
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   color: #FFF;
   padding: 20px 0 0 0;
 }
+#shows-container .shows .item-carrosel .img-container {
+  display: flex;
+  justify-content: space-around;
+}
 @media (max-width: 768px) {
+  #shows-container .shows .item-carrosel img {
+    width: 70%;
+  }
   #shows-container .shows .car1 {
     display: none;
   }
@@ -260,8 +268,8 @@ a:hover {
   box-shadow: 4px 4px #161616;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 200px;
-  height: 230px;
+  width: 30%;
+  height: 250px;
 }
 #loja-container .loja-desktop {
   display: flex;
@@ -298,6 +306,8 @@ a:hover {
     margin-bottom: 30px;
   }
   #loja-container .loja-mobile .imagens img {
+    width: 70%;
+    height: auto;
     margin-bottom: 30px;
   }
 }
