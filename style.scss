@@ -22,6 +22,17 @@ section{
     padding: 50px 0;
 }
 
+a{
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover{
+        color: $cor4;
+    }
+}
+
+
+
 nav{
     top: 0;
     display: flex;
@@ -53,7 +64,7 @@ nav{
     }
 }
 
-.sintoniza{
+#sintoniza{
     background-image: url("imagens/fundo.jpg");
     background-size:  cover;
 }
@@ -128,224 +139,277 @@ nav{
     // }
 }
 
-.sobre{
+#sobre-container{
     background-color: $cor2;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .foto, .texto-sobre{
-        height: 100%;
+    .sobre{
+        height: auto;
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        
-    }
-    .foto{
-        width: 50.5%;
-        // border-right: solid 1px $cor1;
-        justify-content: center;
-        img{
-            max-width: 80%;
-            border: solid 1px $cor1;
-            filter: grayscale(50%);
-            object-fit: cover;
-            box-shadow: 10px 10px $cor1;
-        }
-        p{
-            margin-top: 20px;
-            font-family: $fonte2;
-        }
-    }
-    .texto-sobre{
-        width: 49.5%;
-        justify-content: flex-start;
-        gap: 30px;
-        p{
-            color: $cor1;
-            text-align: justify;
-            padding: 0 50px;
-            font-size: x-large;
-            font-family: $fonte2;
-            font-weight: light;
-        }
-        h2{
-            background-color: $cor4;
-            background-size: cover;
-            color: $cor2;
-            font-family: $fonte1;
-            padding: 15px;
-            -webkit-text-stroke: 1px $cor1;
-            text-shadow: 3px 3px $cor1;
-            border: 1px solid $cor1;
-            box-shadow: 4px 4px $cor1;
-       
-        }
-    }
-    @media (max-width: $mobile) {
-        flex-direction: column;
-        gap: 40px;
-        .foto{
-            border: none;
-        }
         .foto, .texto-sobre{
-            width: 100%;
-            height: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .foto{
+            width: 50.5%;
+            // border-right: solid 1px $cor1;
+            justify-content: center;
+            img{
+                max-width: 80%;
+                border: solid 1px $cor1;
+                filter: grayscale(50%);
+                object-fit: cover;
+                box-shadow: 10px 10px $cor1;
+            }
+            p{
+                margin-top: 20px;
+                font-family: $fonte2;
+            }
+        }
+        .texto-sobre{
+            width: 49.5%;
+            justify-content: flex-start;
+            gap: 30px;
+            p{
+                color: $cor1;
+                text-align: justify;
+                padding: 0 50px;
+                font-size: x-large;
+                font-family: $fonte2;
+                font-weight: light;
+            }
+            h2{
+                background-color: $cor4;
+                background-size: cover;
+                color: $cor2;
+                font-family: $fonte1;
+                padding: 15px;
+                text-shadow: 3px 3px $cor1;
+                border: 1px solid $cor1;
+                box-shadow: 4px 4px $cor1;
+                -webkit-text-stroke: 1px $cor1;
+            }
+        }
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            gap: 40px;
+            .foto{
+                border: none;
+            }
+            .foto, .texto-sobre{
+                width: 100%;
+                height: 50%;
+            }
         }
     }
 
   
 
 }
-.shows{
+#shows-container{
     background-color: $cor1;
-    .car2{
-        display: none;
-    }
-    .logo-titulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        .logo{
-            width: 70px;
+    .shows{
+
+        .car2{
+            display: none;
         }
-        .ultimos-shows{
-            width: 216px;
+        .logo-titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .logo{
+                width: 70px;
+            }
+            .ultimos-shows{
+                width: 216px;
+            }
+            margin-bottom: 40px;
         }
-        margin-bottom: 40px;
-    }
-
-    .item-carrosel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-        img{
-            height: 300px;
-            object-fit: cover;
-            max-width: 40%;
-            border: solid 1px $cor4;
-            box-shadow: 4px 4px $cor4;
-            
-        }
-    }
-
-    .carousel-control-prev, .carousel-control-next{
-        background-color: transparent;
-        border: none;
-    }
-
-    p{
-        font-family: $fonte2;
-        text-align: center;
-        color: $cor2;
-        padding: 20px 0 0 0;
-    }
-
-    @media (max-width: $mobile) {
-       .car1{
-        display: none;
-       }
-       .car2{
-        display: block;
+    
         .item-carrosel{
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            img{
+                height: 300px;
+                object-fit: cover;
+                max-width: 40%;
+                border: solid 1px $cor4;
+                box-shadow: 4px 4px $cor4;
+                
+            }
         }
-        img{
-            max-width: 80%;
+    
+        p{
+            font-family: $fonte2;
+            text-align: center;
+            color: $cor2;
+            padding: 20px 0 0 0;
         }
-       }
+    
+        @media (max-width: $mobile) {
+           .car1{
+            display: none;
+           }
+           .car2{
+            display: block;
+            img{
+                min-width: 200px;
+            }
+        }
+    }
     }
 }
 
 
-//Vi como fazia a sidebar aqui: https://blog.pagesd.info/2020/06/01/animation-css-sidebar/
-
-// #sidebar{
-//     font-family: $fonte1;
-//     transition: all 0.25s;
-//     position: fixed;
-//     background-color: $cor2;
-//     color: $cor1;
-//     height: 100vh;
-//     width: 300px;
-//     padding: 2rem;
-//     transition: all 1s;
-//     z-index: 1;
-
-//     h2{
-//         margin-bottom: 2rem;
-//         width: 100%;
-//     }
-
-//     .menuAndBtn{
-//         display: flex;
-//     }
+.carousel-control-prev, .carousel-control-next{
+    background-color: transparent;
+    border: none;
+}
+#loja-container{
+    height: auto;
+    min-height: 0;
+    .loja{
+        h2{
+            font-size: 2.5rem;
+            font-family: $fonte1;
+            color: $cor2;
+            text-shadow: 3px 3px $cor1;
+            -webkit-text-stroke: 1px $cor1;
+        }
+        .seguir{
+            height: 100px;
+            font-family: $fonte2;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 60px;
+            }
+        }
+        .imagens{
+            img{
+                border: solid 1px $cor1;
+                box-shadow: 4px 4px $cor1;
+                object-fit: cover;
+                width: 200px;
+                height: 230px;
+            }
+        }
+    }
     
+    .loja-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items:center;
+        .imagens-seguir{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .imagens{
+                width: 70%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
     
-//     @media (max-width: $mobile) {
-//         width:100vh;
-//     }
+    .loja-mobile{
+        display: none;
+    }
 
-//     ul{
-//         padding: 0;
-//         width: 100%;
-//         hr{
-//             width: 100%;
-//             border-top: solid 1px $cor1;
-//         }
+    @media (max-width: $mobile) {
+        .loja-desktop{
+            display: none;
+        }
+        .loja-mobile{
+            width: 100%;
+            display: block;
+            .titulo{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+           .imagens img{
+                margin-bottom: 30px;
+            }
+        }
+
+}}
+
+
+
+#contato-container{
+    min-height: 300px;
+    padding-top: 50px;
+    background-color: $cor1;
+    color: $cor2;
+    display: flex;
+    justify-content: space-around;
+    h2{
+        font-family: $fonte1;
+    }
+    p{
+        font-size: 1.2rem;
+        font-family: $fonte2;
+    }
+    .contato, .redes{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+   
+    .contato{
+        .item-contato{
+            color: $cor2;
+            display: flex;
+            gap: 15px;
+        }
+        
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
     
-//        li{ 
-//         font-family: inherit;
-//         padding-left: 0.5rem;
-//        }
-//     }
-// }
+    .redes{
+        .logos{
+            align-self: center;
+            img{
+                margin: 2px;
+                width: 50px;
+            }
+        }
+    }
 
+    @media (max-width: $mobile) {
+        padding-left: 40px;
+        flex-direction: column;
+        .contato, .redes{
+            gap: 20px;
+            padding-bottom: 100px;
+        }
+        .logos{
+            align-self: flex-start!important;
+        }
+    }
+}
 
-// #sidebar-toggle {
-//     color: transparent;
-//     background-color: $cor1;
-//     border-radius: 50%;
-//     display: flex;
-//     justify-content: center;
-//     height: 2.2rem;
-//     left: 280px;
-//     position: absolute;
-//     text-decoration: none;
-//     top: 7px;
-//     width: 2.2rem;
-// }
-
-// #sidebar-toggle::after {
-//     align-self: center;
-//     content: "🡐";
-//     color: white;
-//     display: block;
-//     font-size: 1.6rem;
-//     font-weight: bold;
-//     margin: -.2rem 0 0 0;
-//     text-align: center;
-// }
-
-
-// .no-sidebar #sidebar {
-//     margin-left: -280px;
-// }
-
-// .no-sidebar #sidebar-toggle::after {
-//     content: "🡒";
-//     margin-left: .2rem;
-// }
-
-// .no-sidebar #sidebar-toggle::after {
-//     content: "🡒";
-//     margin-left: .2rem;
-// }
-
-
-// #sidebar-toggle:hover {
-//     background-color: goldenrod;
+@media (max-width: $mobile) {
+    .item-carrosel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }

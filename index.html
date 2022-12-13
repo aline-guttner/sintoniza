@@ -5,129 +5,247 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Sintoniza</title>
 </head>
 
-<body>
-    <nav>
-        <span>
-            <a href="">SOBRE A BANDA</a><a href="">O QUE VEM POR AÍ</a><a href="">LOJA</a><a href="">CONTATO</a>
-        </span>
-    </nav>
-    <main>
-        <section class="sintoniza">
-            <div class="sintoniza-content">
-                <h1>BANDA SINTONIZA</h1>
-                <div class="albuns">
-                    <iframe class="spotify"
-                        src="https://open.spotify.com/embed/album/6PeFzyDxC7CYobCQmknbMb?utm_source=generator&theme=0"
-                        frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                    <!-- <span class="discografia">
-                        <h2>DISCOGRAFIA</h2>
-                        <ul>
-                            <li>
-                                Geração<br>
-                                 <p>2022 - EP</p>
-                </li>
-                </ul>
-        </span> -->
-                </div>
-            </div>
-        </section>
-        <section class="sobre">
-            <div class="foto">
-                <img src="imagens/hique.jpg" class="img-fluid" alt="logo do sintoniza, que é um rádio">
-                <p>A TOCA - 22/10/2022 - ITATIBA - SP </p>
-            </div>
-            <div class="texto-sobre">
-                <h2>SOBRE A BANDA</h2>
-                <p>Sintoniza nasceu para conversar com o aspecto mais íntimo e mais descontraído das pessoas por meio
-                    da música, dois extremos onde as barreiras são desconstruídas. Sempre haverá momentos para serem
-                    embalados, nas frequências mais diversas que a vida nos impõe, e nós queremos estar lá nesses
-                    momentos, seja pra confortar uma dor ou pra gritar junto a revolta dos nossos corações.</p>
-            </div>
-        </section>
-        <section class="shows">
-            <span class="logo-titulo">
-                <img src="imagens/logo.png" class="logo" alt="logo do Sintoniza (um rádio)">
-                <img src="imagens/ultimos-shows.png" alt="título secundário 'Últimos shows'" class="ultimos-shows">
+<div style="overflow-x: hidden;">
+
+    <body>
+        <nav>
+            <span>
+                <a href="#sintoniza">HOME</a>
+                <a href="#sobre-container">SOBRE A BANDA</a>
+                <a href="#shows-container"><strong>Ú</strong>LTIMOS SHOWS</a>
+                <a href="#loja-container">LOJA</a>
+                <a href="#contato-container">CONTATO</a>
             </span>
-            <div id="carouselExampleControls" class="carousel slide car1" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval=" 999999999">
-                        <div class="item-carrosel">
-                            <img src="imagens/halloween1.jpg" class="d-block img-fluid" alt="foto da banda">
-                            <img src="imagens/halloween2.jpg" class="d-block img-fluid" alt="foto da banda">
-
-                        </div>
-                        <p>A TOCA - 22/10/2022 - ITATIBA - SP</p>
+        </nav>
+        <main>
+            <section id="sintoniza">
+                <div class="sintoniza-content">
+                    <h1>BANDA SINTONIZA</h1>
+                    <div class="albuns">
+                        <iframe class="spotify"
+                            src="https://open.spotify.com/embed/album/6PeFzyDxC7CYobCQmknbMb?utm_source=generator&theme=0"
+                            frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <!-- <span class="discografia">
+                            <h2>DISCOGRAFIA</h2>
+                            <ul>
+                                <li>
+                                    Geração<br>
+                                     <p>2022 - EP</p>
+                    </li>
+                    </ul>
+            </span> -->
                     </div>
-                    <div class="carousel-item" data-bs-interval=" 999999999">
-                        <div>
-                            <div class="item-carrosel">
-                                <img src="imagens/jangada1.jpg" class="d-block img-fluid" alt="foto da banda">
-                                <img src="imagens/jangada2.jpeg" class="d-block img-fluid" alt="foto da banda">
+                </div>
+            </section>
+            <section id="sobre-container">
+                <div class="sobre" data-aos="fade-down">
+                    <div class="foto">
+                        <img src="imagens/hique.jpg" class="img-fluid" alt="logo do sintoniza, que é um rádio">
+                        <p>A TOCA - 22/10/2022 - ITATIBA - SP </p>
+                    </div>
+                    <div class="texto-sobre">
+                        <h2>SOBRE A BANDA</h2>
+                        <p>Sintoniza nasceu para conversar com o aspecto mais íntimo e mais descontraído das pessoas por
+                            meio
+                            da música, dois extremos onde as barreiras são desconstruídas. Sempre haverá momentos para
+                            serem
+                            embalados, nas frequências mais diversas que a vida nos impõe, e nós queremos estar lá
+                            nesses
+                            momentos, seja pra confortar uma dor ou pra gritar junto a revolta dos nossos corações.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="shows-container">
+                <div class="shows" data-aos="fade-left">
+                    <span class="logo-titulo">
+                        <img src="imagens/logo.png" class="logo" alt="logo do Sintoniza (um rádio)">
+                        <img src="imagens/ultimos-shows.png" alt="título secundário 'Últimos shows'"
+                            class="ultimos-shows">
+                    </span>
+                    <div id="carouselExampleControls" class="carousel slide car1" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval=" 999999999">
+                                <div class="item-carrosel">
+                                    <img src="imagens/halloween1.jpg" class="d-block img-fluid" alt="foto da banda">
+                                    <img src="imagens/halloween2.jpg" class="d-block img-fluid" alt="foto da banda">
 
+                                </div>
+                                <p>A TOCA - 22/10/2022 - ITATIBA - SP</p>
                             </div>
-                            <p>JANGADA FEST - 11/06/2022 - ITATIBA - SP</p>
+                            <div class="carousel-item" data-bs-interval=" 999999999">
+                                <div>
+                                    <div class="item-carrosel">
+                                        <img src="imagens/jangada1.jpg" class="d-block img-fluid" alt="foto da banda">
+                                        <img src="imagens/jangada2.jpeg" class="d-block img-fluid" alt="foto da banda">
+
+                                    </div>
+                                    <p>JANGADA FEST - 11/06/2022 - ITATIBA - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                    <div id="carouselExampleControls2" class="carousel slide car2" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="999999999">
+                                <div class="item-carrosel">
+                                    <img src="imagens/halloween1.jpg" class="d-block img-fluid" alt="foto da banda">
+                                    <p>A TOCA - 22/10/2022 - ITATIBA - SP</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval=" 999999999">
+                                <div class="item-carrosel">
+                                    <img src="imagens/jangada2.jpeg" class="d-block img-fluid" alt="...">
+                                    <p>JANGADA FEST - 11/06/2022 - ITATIBA - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+            <section id="loja-container">
+                <div class="loja-desktop loja" data-aos="fade-up-left">
+                    <h2>CONFIRA NOSSA LOJA</h2>
+                    <div class="imagens-seguir">
+                        <div class="imagens">
+                            <img src="imagens/camiseta1.jpeg"
+                                alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                            <img src="imagens/camiseta2.jpeg"
+                                alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                            <img src="imagens/camiseta3.jpeg"
+                                alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                        </div>
+                        <div class="seguir">
+                            <img src="imagens/arrow.png" alt="seta apontando para a direita">
+                            <p>SEGUIR PARA A LOJA</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-            </div>
-            <div id="carouselExampleControls2" class="carousel slide car2" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="999999999">
-                        <div class="item-carrosel">
-                            <img src="imagens/halloween1.jpg" class="d-block img-fluid" alt="foto da banda">
-                            <p>A TOCA - 22/10/2022 - ITATIBA - SP</p>
+                <div class="loja-mobile loja" data-aos="fade-up-left">
+                    <span class="titulo">
+                        <h2>CONFIRA NOSSA LOJA</h2>
+                    </span>
+                    <div>
+                        <div id="carouselExampleControls3" class="carousel imagens carousel-dark"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="999999999">
+                                    <div class="item-carrosel">
+                                        <img src="imagens/camiseta1.jpeg"
+                                            alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="999999999">
+                                    <div class="item-carrosel">
+                                        <img src="imagens/camiseta2.jpeg"
+                                            alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="999999999">
+                                    <div class="item-carrosel">
+                                        <img src="imagens/camiseta3.jpeg"
+                                            alt="imagem de pessoa vestindo camiseta com logo da banda sintoniza">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval=" 999999999">
-                        <div class="item-carrosel">
-                            <img src="imagens/jangada2.jpeg" class="d-block img-fluid" alt="...">
-                            <p>JANGADA FEST - 11/06/2022 - ITATIBA - SP</p>
+                        <div class="seguir">
+                            <img src="imagens/arrow.png" alt="seta apontando para a direita">
+                            <p>SEGUIR PARA A LOJA</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
+            </section>
+        </main>
+        <footer id="contato-container">
+            <div class="contato">
+                <h2>Contato para shows</h2>
+                <div>
 
+                    <a class="item-contato" href="https://wa.me/5511950936623">
+                        <img src="imagens/whatsapp.png" alt="logo do whatsapp">
+                        <p class="d-inline">Clique para iniciar uma conversa</p>
+                    </a>
+
+                    <div class="item-contato">
+                        <img src="imagens/Vector.png" alt="logo de email">
+                        <p class="d-inline">sintoniza.banda@gmail.com</p>
+                    </div>
+                </div>
             </div>
+            <div class="redes">
+                <h2>Siga-nos nas redes sociais</h2>
+                <div class="logos">
+                    <a href="https://www.tiktok.com/@bandasintoniza?is_from_webapp=1&sender_device=pc">
+                        <img src="imagens/TikTok.png" alt="logo do tiktok">
+                    </a>
+                    <a href="https://twitter.com/BandaSintoniza?t=hNxH8kBlnLzDBCrMORb0eQ&s=09">
+                        <img src="imagens/logo-twitter.png" alt="logo do twitter">
+                    </a>
+                    <a href="https://m.facebook.com/sintoniza.banda">
+                        <img src="imagens/Facebook.png" alt="logo do facebook">
+                    </a>
+                    <a href="https://open.spotify.com/artist/4QcAqlSeLFqUWwLCKbgtfo">
+                        <img src="imagens/icon-spotify.png" alt="logo do spotify">
+                    </a>
+                    <a href="https://www.instagram.com/banda.sintoniza/">
+                        <img src="imagens/icon-instagram.png" alt="logo do instagram">
+                    </a>
+                </div>
+            </div>
+        </footer>
 
-        </section>
-        <section></section>
-    </main>
-    <footer></footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
+</div>
 
 </html>
