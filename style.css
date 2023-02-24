@@ -40,19 +40,19 @@ a:hover {
 }
 
 #sintoniza {
-  background-image: url("imagens/fundo.jpg");
+  background-image: url("imagens/imagem_banda.jpg");
+  background-position-y: 20%;
   background-size: cover;
+  height: 65vh;
 }
-
-.sintoniza-content {
+#sintoniza .sintoniza-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
   align-items: center;
-  height: 100vh;
+  height: inherit;
 }
-.sintoniza-content h1 {
+#sintoniza .sintoniza-content h1 {
   text-align: center;
   color: #FFF;
   font-size: 70px;
@@ -60,7 +60,19 @@ a:hover {
   text-shadow: 4px 4px #161616;
 }
 
-.albuns {
+.albuns-container {
+  border-top: solid 5px #FFF;
+  background-image: url("imagens/fundo.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  height: 35vh;
+}
+.albuns-container .albuns {
+  margin-top: 14vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -69,11 +81,7 @@ a:hover {
        column-gap: 20px;
   width: 40%;
 }
-.albuns .spotify {
-  width: 300px;
-  height: 300px;
-}
-.albuns .discografia {
+.albuns-container .albuns .discografia {
   color: #FFF;
   font-family: "Barlow Condensed", sans-serif;
   height: 90%;
@@ -83,26 +91,26 @@ a:hover {
   padding-left: 30px;
   text-shadow: 2px 2px #161616;
 }
-.albuns .discografia ul {
+.albuns-container .albuns .discografia ul {
   padding: 0;
 }
-.albuns .discografia ul li::before {
+.albuns-container .albuns .discografia ul li::before {
   content: "+ ";
 }
-.albuns .discografia ul li {
+.albuns-container .albuns .discografia ul li {
   font-size: 1.4rem;
   font-family: "Barlow Condensed", sans-serif;
 }
-.albuns .discografia ul p {
+.albuns-container .albuns .discografia ul p {
   padding-top: 0.5rem;
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-  .albuns {
+  .albuns-container .albuns {
     flex-direction: column;
     row-gap: 30px;
   }
-  .albuns .discografia {
+  .albuns-container .albuns .discografia {
     border: none;
     padding-left: 0;
   }
